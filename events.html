@@ -36,11 +36,12 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
                                     <li><a class="dropdown-item" href="founders.html">Founders</a></li>
-                                    <li><a class="dropdown-item" href="directors.html">Board of Directors</a></li>
+                                    <!-- <li><a class="dropdown-item" href="directors.html">Board of Directors</a></li> -->
                                     <li><a class="dropdown-item" href="partners.html">Partners</a></li>
-                                    <li><a class="dropdown-item" href="sponsors.html">Sponsors</a></li>
+                                    <!-- <li><a class="dropdown-item" href="sponsors.html">Sponsors</a></li> -->
                                 </ul>
                             </li>
+                            <li class="nav-item"><a class="nav-link" href="temple.html" style="color: black; font-size: 20px; margin-right: 20px;">Temple</a></li>
                             <li class="nav-item"><a class="nav-link" href="events.html" style="color: black; font-size: 20px; margin-right: 20px;">Events</a></li>
                             <li class="nav-item"><a class="nav-link" href="pictures.html" style="color: black; font-size: 20px; margin-right: 20px;">Pictures</a></li>
                             <li class="nav-item"><a class="nav-link" href="bylaws.html" style="color: black; font-size: 20px; margin-right: 20px;">Bylaws</a></li>
@@ -74,12 +75,12 @@
                     </div>                      
                     <div class="col-auto">
                         <div style="display: flex; align-items: center;">
-                            <a class="text-gradient" href="https://www.instagram.com/youthidjo/" target="_blank"><i class="bi bi-instagram" style="font-size: 32px;"></i></a>
+                            <!-- <a class="text-gradient" href="https://www.instagram.com/youthidjo/" target="_blank"><i class="bi bi-instagram" style="font-size: 32px;"></i></a>
                             <span class="mx-3">&middot;</span>
                             <a class="text-gradient" href="https://www.google.com" target="_blank"><i class="bi bi-twitter" style="font-size: 32px;"></i></a>
                             <span class="mx-3">&middot;</span>
                             <a class="text-gradient" href="https://www.google.com" target="_blank"><i class="bi bi-linkedin" style="font-size: 32px;"></i></a>
-                            <span class="mx-3">&middot;</span>
+                            <span class="mx-3">&middot;</span> -->
                             <a class="text-gradient" href="https://github.com/sjain2025/YouthIDJO" target="_blank"><i class="bi bi-github" style="font-size: 32px;"></i></a>
                         </div>                        
                     </div>                      
@@ -95,30 +96,22 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
 
-        <!-- Initialize the calendar -->
         <script>
             $(document).ready(function() {
                 $('#calendar').fullCalendar({
-                    // Set your desired options and callbacks here
-                    // For example, you can set the default view, add event sources, etc.
-                    // You can refer to the FullCalendar documentation for more customization options: https://fullcalendar.io/docs
-                    
-                    // Example options:
-                    defaultView: 'month', // Display the calendar in month view by default
+                    defaultView: 'month',
+                    validRange: {
+                        start: moment().format('YYYY-MM-DD')
+                    },
                     events: [
                         {
                             title: 'Sense of Thai Dinner',
                             start: '2022-12-03',
                             end: '2022-12-03'
-                        },
-                        {
-                            title: 'Top Golf Social Event',
-                            start: '2023-08-08',
-                            end: '2023-08-08'
-                        },
+                        }
                     ]
                 });
             });
-        </script>
+        </script>        
     </body>
 </html>

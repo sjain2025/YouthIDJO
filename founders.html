@@ -36,11 +36,12 @@
                               </a>
                               <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
                                   <li><a class="dropdown-item" href="founders.html">Founders</a></li>
-                                  <li><a class="dropdown-item" href="directors.html">Board of Directors</a></li>
+                                  <!-- <li><a class="dropdown-item" href="directors.html">Board of Directors</a></li> -->
                                   <li><a class="dropdown-item" href="partners.html">Partners</a></li>
-                                  <li><a class="dropdown-item" href="sponsors.html">Sponsors</a></li>
+                                  <!-- <li><a class="dropdown-item" href="sponsors.html">Sponsors</a></li> -->
                               </ul>
                           </li>
+                          <li class="nav-item"><a class="nav-link" href="temple.html" style="color: black; font-size: 20px; margin-right: 20px;">Temple</a></li>
                           <li class="nav-item"><a class="nav-link" href="events.html" style="color: black; font-size: 20px; margin-right: 20px;">Events</a></li>
                           <li class="nav-item"><a class="nav-link" href="pictures.html" style="color: black; font-size: 20px; margin-right: 20px;">Pictures</a></li>
                           <li class="nav-item"><a class="nav-link" href="bylaws.html" style="color: black; font-size: 20px; margin-right: 20px;">Bylaws</a></li>
@@ -107,7 +108,7 @@
                   }
 
                   .card:hover {
-                      opacity: 0.8;
+                      opacity: 0.95;
                   }
               
                   .social-icons {
@@ -137,6 +138,15 @@
                           </div>
                         </div>
                       </div>
+                      <div class="col-lg-4 col-md-6 mb-5" onclick="openPopup('Soham Jain')">
+                        <div class="card h-100">
+                          <img src="assets/profile-pictures/sohampfp.png" class="card-img-top" alt="Person 3">
+                          <div class="card-body text-center">
+                            <h5 class="card-title">Soham Jain</h5>
+                            <p class="card-text">Co-Founder, President</p>
+                          </div>
+                        </div>
+                      </div>
                     <div class="col-lg-4 col-md-6 mb-5" onclick="openPopup('Krish Jain')">
                       <div class="card h-100 doubled-height">
                         <img src="assets/profile-pictures/krishpfp.png" class="card-img-top" alt="Person 1">
@@ -146,15 +156,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-5" onclick="openPopup('Soham Jain')">
-                      <div class="card h-100">
-                        <img src="assets/profile-pictures/sohampfp.png" class="card-img-top" alt="Person 3">
-                        <div class="card-body text-center">
-                          <h5 class="card-title">Soham Jain</h5>
-                          <p class="card-text">Co-Founder, President</p>
-                        </div>
-                      </div>
-                    </div>
+                    
                   </div>
                 </section>
                 <div class="popup" id="popup">
@@ -172,30 +174,30 @@
                 <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
                 <script>
                   function openPopup(name) {
-                    var popup = document.getElementById("popup");
-                    var popupName = document.querySelector(".popup-name");
-                    var popupPosition = document.querySelector(".popup-position");
-                    var popupContent = document.getElementById("popup-content");
+                    // var popup = document.getElementById("popup");
+                    // var popupName = document.querySelector(".popup-name");
+                    // var popupPosition = document.querySelector(".popup-position");
+                    // var popupContent = document.getElementById("popup-content");
               
-                    if (name === 'Krish Jain') {
-                      popupName.textContent = name;
-                      popupPosition.textContent = "Co-Founder, President";
-                      popupContent.textContent = "Short Bio";
-                    } else if (name === 'Ahana Jain') {
-                      popupName.textContent = name;
-                      popupPosition.textContent = "Co-Founder, President";
-                      popupContent.textContent = "Short Bio";
-                    } else if (name === 'Soham Jain') {
-                      popupName.textContent = name;
-                      popupPosition.textContent = "Co-Founder, President";
-                      popupContent.textContent = "Short Bio";
-                    } else {
-                      popupName.textContent = "";
-                      popupPosition.textContent = "";
-                      popupContent.textContent = "Bio is not available";
-                    }
+                    // if (name === 'Krish Jain') {
+                    //   popupName.textContent = name;
+                    //   popupPosition.textContent = "Co-Founder, President";
+                    //   popupContent.textContent = "Short Bio";
+                    // } else if (name === 'Ahana Jain') {
+                    //   popupName.textContent = name;
+                    //   popupPosition.textContent = "Co-Founder, President";
+                    //   popupContent.textContent = "Short Bio";
+                    // } else if (name === 'Soham Jain') {
+                    //   popupName.textContent = name;
+                    //   popupPosition.textContent = "Co-Founder, President";
+                    //   popupContent.textContent = "Short Bio";
+                    // } else {
+                    //   popupName.textContent = "";
+                    //   popupPosition.textContent = "";
+                    //   popupContent.textContent = "Bio is not available";
+                    // }
               
-                    popup.style.display = "block";
+                    // popup.style.display = "block";
                   }
               
                   function closePopup() {
@@ -215,12 +217,12 @@
                     </div>                      
                     <div class="col-auto">
                         <div style="display: flex; align-items: center;">
-                            <a class="text-gradient" href="https://www.instagram.com/youthidjo/" target="_blank"><i class="bi bi-instagram" style="font-size: 32px;"></i></a>
+                            <!-- <a class="text-gradient" href="https://www.instagram.com/youthidjo/" target="_blank"><i class="bi bi-instagram" style="font-size: 32px;"></i></a>
                             <span class="mx-3">&middot;</span>
                             <a class="text-gradient" href="https://www.google.com" target="_blank"><i class="bi bi-twitter" style="font-size: 32px;"></i></a>
                             <span class="mx-3">&middot;</span>
                             <a class="text-gradient" href="https://www.google.com" target="_blank"><i class="bi bi-linkedin" style="font-size: 32px;"></i></a>
-                            <span class="mx-3">&middot;</span>
+                            <span class="mx-3">&middot;</span> -->
                             <a class="text-gradient" href="https://github.com/sjain2025/YouthIDJO" target="_blank"><i class="bi bi-github" style="font-size: 32px;"></i></a>
                         </div>                        
                     </div>                      
